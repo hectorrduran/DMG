@@ -6,3 +6,13 @@ footer {
     bottom: 0px;
     text-align: center;
 }
+
+.jumbotron {
+    background-image: url("http://www.fondox.net/wallpapers/carreras-de-caballos-2042.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    color: white;
+    opacity: 0.9;
+}
