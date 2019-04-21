@@ -8,6 +8,11 @@ hbs.registerPartials(__dirname + '/views/parciales');
 hbs.registerHelper('getAnio', (opt) => {
     return new Date().getFullYear() + parseInt(opt);
 });
+
+hbs.registerHelper('getFecha', (opt) => {
+    return (new Date().getDate() + parseInt(opt)).toString() + (new Date().getMonth() + 1).toString() + new Date().getFullYear().toString();
+});
+
 app.set('view engine', 'hbs');
 app.get('/', (req, res) => {
 
