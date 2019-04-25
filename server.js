@@ -10,6 +10,12 @@ hbs.registerHelper('getAnio', (opt) => {
 });
 
 hbs.registerHelper('getFecha', (opt) => {
+    var date = new Date();
+    var day = date.getDay() || 7;
+    if (day !== opt)
+        date.setHours(-24 * (day - opt));
+    return date.getDate() + '' + (date.getMonth() + 1) + '' + date.getFullYear();
+
     return (new Date().getDate() + parseInt(opt)).toString() + (new Date().getMonth() + 1).toString() + new Date().getFullYear().toString();
 });
 
@@ -30,6 +36,11 @@ app.get('/quienes-somos', (req, res) => {
 app.get('/hipodromosAmericano', (req, res) => {
 
     res.render('hipodromosAmericano');
+});
+
+app.get('/hipodromosAmericanoEstandar', (req, res) => {
+
+    res.render('hipodromosAmericanoEstandar');
 });
 
 app.get('/hipodromosNacionales', (req, res) => {
