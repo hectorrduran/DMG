@@ -1,5 +1,5 @@
 footer {
-    background-color: #353a3f;
+    background-color: #28a745!important;
     color: white;
     width: 100%;
     position: fixed;
@@ -15,4 +15,18 @@ footer {
     background-size: cover;
     color: white;
     opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+.container {
+    margin-bottom: 3rem;
+}
+
+.alinear-texto td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.alinear-texto td:hover {
+    background-color: #28a745;
 }
