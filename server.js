@@ -22,7 +22,7 @@ hbs.registerHelper('getFecha', (opt) => {
 app.set('view engine', 'hbs');
 app.get('/', (req, res) => {
 
-    res.render('login', {
+    res.render('home', {
         nombre: 'Bienvenido a DMG'
 
     });
