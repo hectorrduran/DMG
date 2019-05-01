@@ -33,6 +33,11 @@ app.get('/quienes-somos', (req, res) => {
     res.render('quienes-somos');
 });
 
+app.get('/afiliados', (req, res) => {
+
+    res.render('afiliados');
+});
+
 app.get('/hipodromosAmericano', (req, res) => {
 
     res.render('hipodromosAmericano');
